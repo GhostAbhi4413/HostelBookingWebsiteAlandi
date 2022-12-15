@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HostelGeeks</title>
+    <meta property="og:title" content="Travel Agency" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Poppins;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <div>
+      <link href="./registeration.css" rel="stylesheet" />
+
+      <div class="registeration-container">
+        <div class="registeration-container1">
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE3fHxyb29tc3xlbnwwfHx8fDE2NjgwODQ5NjQ&amp;ixlib=rb-4.0.3&amp;w=1000"
+            loading="lazy"
+            class="registeration-image"
+          />
+          <input
+            id="nameinp"
+            type="text"
+            placeholder="Enter Your Name "
+            class="registeration-textinput input"
+          />
+          <input
+          id="emailinp"
+            type="text"
+            placeholder="Enter Your Email "
+            class="registeration-textinput1 input"
+          />
+          <input
+          id="usernameinp"
+            type="text"
+            placeholder="Enter Your Username"
+            class="registeration-textinput2 input"
+          />
+          <input
+          id="passwordinp"
+            type="text"
+            placeholder="Enter Your Password"
+            class="registeration-textinput3 input"
+          />
+          <input
+            type="text"
+            placeholder="Confirm Password"
+            class="registeration-textinput4 input"
+          />
+          <svg viewBox="0 0 1024 1024" class="registeration-icon">
+            <path
+              d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+            ></path>
+          </svg>
+          <a  class="registeration-navlink button">
+            <span class="registeration-text">
+              <button id="sub_btn" class="registeration-text01">Sign Up</button>
+              <br />
+            </span>
+          </a>
+          <div class="registeration-container2">
+            <span class="registeration-text03">
+              <span>I agree to the</span>
+              <span class="registeration-text05">terms of user</span>
+            </span>
+            <input
+              type="checkbox"
+              checked="true"
+              class="registeration-checkbox"
+            />
+          </div>
+          <span class="registeration-text06">Full name</span>
+          <span class="registeration-text07">Email</span>
+          <span class="registeration-text08">Username</span>
+          <span class="registeration-text09">Password</span>
+          <span class="registeration-text10">Repeat password</span>
+          <h1 class="registeration-text11">Sign Up</h1>
+          <a href="login.html" class="registeration-navlink1">
+            <h1 class="registeration-text12">Sign in</h1>
+          </a>
+          <h1 class="registeration-logo">HostelGeeks</h1>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script> -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+
+      //--------------------------------------------------Firebase Configuration------------------------------------------------------------------------
+      const firebaseConfig = {
+        apiKey: "AIzaSyC1RYfg49CTDvJT1V2lThq7-wt0v7eXr9c",
+        authDomain: "hostelgeeks-7d69f.firebaseapp.com",
+        databaseURL: "https://hostelgeeks-7d69f-default-rtdb.firebaseio.com",
+        projectId: "hostelgeeks-7d69f",
+        storageBucket: "hostelgeeks-7d69f.appspot.com",
+        messagingSenderId: "318298585506",
+        appId: "1:318298585506:web:47ae88ee00e0c3b5b45afb"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import {  getDatabase, ref,set,child,get } 
+            from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+      const db = getDatabase();
+      // ------------------------------------------------------------------------------------------------------------------------------------------------      
+      // -------------------------------------------------REFERENCES-------------------------------------------------------------------------------------------
+
+        const name = document.getElementById('nameinp');
+        const email = document.getElementById('emailinp');
+        const username = document.getElementById('usernameinp');
+        const pass = document.getElementById('passwordinp');
+        const Submit = document.getElementById('sub_btn');
+
+      //---------------------------------------------------------------------------------------------------------------------------------------------------------------
+      //-----------------------------------------------------------VALIDATION--------------------------------------------------------------------------------------
+      function Validation(){
+        let nameregex = /^[a-zA-z]+$/;
+        let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo)\.com$/;
+        let userregex = /^[a-zA-Z0-9]{5,}$/;
+
+        if(!nameregex.test(name.value)){
+          alert("The name should only contain alphabets");
+          return false;
+        }
+        if(!emailregex.test(email.value)){
+          alert("Enter a valid email");
+          return false;
+        }
+        if(!userregex.test(username.value)){
+          alert("Username should be greater than 5 letters");
+          return false;;
+        }
+        return true;
+
+
+
+      }
+
+
+
+      //---------------------------------REGISTER USER TO FIREBASE----------------------------------------------------
+      function RegisterUser(){
+        if(!Validation()){
+              return;
+        };
+        const dbref = ref(db);
+
+        get(child(dbref,"Userslist/"+username.value)).then((snapshot) =>{
+          if(snapshot.exists()){
+              alert("Account already exists");
+          }
+          else{
+            set(ref(db,"UsersList/"+ username.value),
+            {
+              fullname: name.value,
+              email: email.value,
+              username: username.value,
+              password: password.value
+            })
+            .then(()=>{
+              alert("user added successfully");
+            })
+            .catch((error)=>{
+              alert("error"+error);
+            })
+          }
+
+        });
+      }
+
+      //--------------------------------------------------ASSIGN THE EVENTS----------------------------------------------------------------------
+      Submit.addEventListener('click',RegisterUser);
+    </script>
+  </body>
+</html>

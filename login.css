@@ -1,0 +1,116 @@
+.login-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-container1 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+.login-image {
+  width: 1006px;
+  height: 1112px;
+  object-fit: cover;
+}
+.login-textinput {
+  top: 419px;
+  flex: 1;
+  right: 114px;
+  height: auto;
+  opacity: 0.7;
+  position: absolute;
+  padding-top: var(--dl-space-space-halfunit);
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: underline;
+}
+.login-textinput1 {
+  top: 513px;
+  flex: 1;
+  right: 117px;
+  height: 47px;
+  opacity: 0.7;
+  position: absolute;
+  padding-top: var(--dl-space-space-halfunit);
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: underline;
+}
+.login-navlink {
+  top: 615px;
+  left: 1198px;
+  width: 121px;
+  height: 52px;
+  display: flex;
+  position: absolute;
+  font-size: 17px;
+  align-self: center;
+  align-items: center;
+  font-weight: 700;
+  padding-top: 28px;
+  border-radius: 30px;
+  padding-right: 23px;
+  flex-direction: row;
+  padding-bottom: 0px;
+  justify-content: center;
+  text-decoration: none;
+  background-image: linear-gradient(rgb(181, 242, 193) 58%, rgb(19, 88, 42) 100%);
+}
+.login-text {
+  top: 12px;
+  right: 27px;
+  position: absolute;
+}
+.login-text1 {
+  font-size: 17px;
+}
+.login-text3 {
+  top: 391px;
+  left: 1193px;
+  height: auto;
+  position: absolute;
+  align-self: stretch;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: 0px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+}
+.login-text4 {
+  top: 492px;
+  flex: 1;
+  left: 1191px;
+  height: auto;
+  position: absolute;
+  align-self: stretch;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: 0px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+}
+.login-text5 {
+  top: 285px;
+  left: 1202px;
+  position: absolute;
+  align-self: stretch;
+}
+.login-logo {
+  top: 119px;
+  left: 1144px;
+  position: absolute;
+}
+@media(max-width: 1200px) {
+  .login-container1 {
+    width: 100%;
+  }
+}

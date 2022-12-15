@@ -1,0 +1,10 @@
+{
+  "name": "travel-agency",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^9.14.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "scripts": {}
+}

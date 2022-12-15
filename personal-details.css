@@ -1,0 +1,346 @@
+.navigation-links-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-text1 {
+  margin-left: 32px;
+}
+.navigation-links-text2 {
+  margin-left: 32px;
+}
+.navigation-links-text3 {
+  margin-left: 32px;
+}
+.navigation-links-text4 {
+  margin-left: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text2 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text3 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links-text4 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.personal-details-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.personal-details-header {
+  top: 1px;
+  left: -3px;
+  width: 1370px;
+  height: 97px;
+  display: flex;
+  z-index: 100;
+  position: absolute;
+  max-width: 1400px;
+  box-shadow: 5px 5px 10px 0px #e9dddd;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 32px;
+  justify-content: space-between;
+  background-color: #6ff7ef;
+}
+.personal-details-btn-group {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #f5f4f4;
+  align-items: center;
+  border-color: #f70e0e;
+  border-width: 1px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.personal-details-text {
+  top: 27px;
+  left: 25px;
+  position: absolute;
+}
+.personal-details-burger-menu {
+  display: none;
+}
+.personal-details-icon {
+  width: 16px;
+  height: 16px;
+}
+.personal-details-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.personal-details-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.personal-details-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+.personal-details-image {
+  height: 2rem;
+}
+.personal-details-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-details-icon02 {
+  width: 16px;
+  height: 16px;
+}
+.personal-details-icon04 {
+  width: 16px;
+  height: 16px;
+  margin-right: 32px;
+}
+.personal-details-icon06 {
+  width: 16px;
+  height: 16px;
+  margin-right: 32px;
+}
+.personal-details-icon08 {
+  width: 16px;
+  height: 16px;
+}
+.personal-details-navlink {
+  display: contents;
+}
+.personal-details-image1 {
+  top: 6px;
+  right: 19px;
+  width: 86px;
+  height: 84px;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.personal-details-text02 {
+  top: 89px;
+  right: 20px;
+  position: absolute;
+}
+.personal-details-text03 {
+  top: 146px;
+  left: 32px;
+  color: rgb(74, 48, 239);
+  position: absolute;
+}
+.personal-details-text04 {
+  top: 143px;
+  left: 389px;
+  position: absolute;
+  font-size: 19px;
+}
+.personal-details-text05 {
+  top: 173px;
+  left: 390px;
+  position: absolute;
+}
+.personal-details-text06 {
+  top: 234px;
+  left: 389px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-text07 {
+  top: 290px;
+  left: 388px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-text08 {
+  top: 348px;
+  left: 389px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-text09 {
+  top: 407px;
+  left: 391px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-text10 {
+  top: 453px;
+  left: 392px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-text11 {
+  top: 466px;
+  left: 642px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-text12 {
+  top: 468px;
+  left: 743px;
+  position: absolute;
+  font-size: 17px;
+}
+.personal-details-textinput {
+  top: 229px;
+  left: 617px;
+  position: absolute;
+}
+.personal-details-textinput1 {
+  top: 289px;
+  left: 615px;
+  position: absolute;
+}
+.personal-details-textinput2 {
+  top: 346px;
+  left: 616px;
+  position: absolute;
+}
+.personal-details-textinput3 {
+  top: 402px;
+  left: 612px;
+  position: absolute;
+}
+.personal-details-radiobutton {
+  top: 473px;
+  left: 616px;
+  position: absolute;
+}
+.personal-details-radiobutton1 {
+  top: 476px;
+  left: 712px;
+  position: absolute;
+}
+.personal-details-footer {
+  width: 100%;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 32px;
+  justify-content: space-between;
+}
+.personal-details-icon-group1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.personal-details-icon10 {
+  width: 16px;
+  height: 16px;
+  margin-right: 32px;
+}
+.personal-details-icon12 {
+  width: 16px;
+  height: 16px;
+  margin-right: 32px;
+}
+.personal-details-icon14 {
+  width: 16px;
+  height: 16px;
+}
+.personal-details-navlink1 {
+  top: 293px;
+  left: 33px;
+  position: absolute;
+  text-decoration: none;
+}
+@media(max-width: 767px) {
+  .personal-details-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .personal-details-btn-group {
+    display: none;
+  }
+  .personal-details-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .personal-details-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .personal-details-text13 {
+    text-align: center;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .personal-details-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .personal-details-mobile-menu {
+    padding: 16px;
+  }
+  .personal-details-footer {
+    padding: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .personal-details-text13 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
